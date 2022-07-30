@@ -1,4 +1,4 @@
-const { getAllLaunches, addNewLaunch, existLaunchWitId, abortLauchById } = require('../../models/launches.module');
+const { getAllLaunches, addNewLaunch, existLaunchWitId, abortLauchById } = require('../../models/launches.model');
 const launchesRouter = require('./lauches.router');
 
 function httpGetAllLaunches(req,res) {
