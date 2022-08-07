@@ -25,7 +25,6 @@ const lauchSchema = new mongoose.Schema({
 
   target: {
     type: String,
-    required: true,
   },
 
   customers: [String],
