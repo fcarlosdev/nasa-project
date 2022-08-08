@@ -56,7 +56,7 @@ async function populateLaunches() {
       success: launchDoc['success'], 
     };
 
-    console.log(launch.flightNumber + " - " + launch.mission)
+    //console.log(launch.flightNumber + " - " + launch.mission)
 
     saveLaunch(launch);
 
@@ -75,7 +75,6 @@ async function loadLaunchData() {
   } else {
     await populateLaunches();
   }
-
 
 }
 
