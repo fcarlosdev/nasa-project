@@ -7,13 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js version 16 
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: npm install
-      - run: npm build --prefix client
+      - run: yarn install
+      - run: yarn build --prefix client
           
